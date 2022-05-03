@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icons link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <!-- header and nav -->
+    <header class="main-header">
+      <div id="logo">
+        <p>ED</p>
+      </div>
+      <nav id="nav" class="active">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#logo">Contact</a></li>
+          <li><a href="#logo">Scroll-up</a></li>
+        </ul>
+        <button class="icon" id="toggle">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Photo and welcome -->
+
+    <section class="hero-section">
+      <div class="hero">
+        <img id="vesikalik" src="efe_foto_kirp.jpg" alt="Efe Dallı" />
+      </div>
+      <div id="baslik1" class="baslik">
+        <span id="baslik2">
+          <h1>Efe Dallı</h1>
+          <p>BilgeAdam Front-End Developer Student</p>
+        </span>
+      </div>
+    </section>
+
+    <!-- main / Forms -->
+
+    <main class="contact">
+      <h2 class="about-h2">Contact With Me</h2>
+      <form action="mailto:efedalli@outlook.com" enctype="text/plain" id="contact" method="get" name="form">
+        <div class="name">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required placeholder="Enter Your Name" minlength="2">
+        </div>
+
+        <div class="mail">
+          <label for="mail">E-mail</label>
+          <input type="email" name="email" id="mail" required placeholder="example@mail.com" pattern=".+@globex.com">
+        </div>
+
+        <div class="phone">
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone" placeholder="123-456-78-99" required minlength="10" maxlength="10">
+        </div>
+
+        <div class="message">
+          <label for="message">Your Message</label>
+          <textarea name="textarea" id="message" cols="30" rows="10" placeholder="Write here..." required></textarea>
+        </div>
+
+        <button class="btn">Submit</button>
+      </form>
+    </main>
+
+    <footer>
+      <div class="social">
+        <a
+          href="https://www.linkedin.com/in/efe-dalli-917767139/"
+          target="_blind"
+          ><i class="ri-linkedin-box-line icn"></i
+        ></a>
+        <a href="https://github.com/efe3506" target="_blind"
+          ><i class="ri-github-line icn"></i
+        ></a>
+        <a href="https://www.instagram.com/fefedalli/" target="_blind"
+          ><i class="ri-instagram-line icn"></i
+        ></a>
+        <a href=""><i class="ri-twitter-line icn"></i></a>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugiat fugit
+        saepe blanditiis, nulla sequi! Voluptatem quos assumenda libero
+        ducimus.(2022)
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

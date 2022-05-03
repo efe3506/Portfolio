@@ -4,37 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- font links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
     <!-- icons link -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- css link -->
     <link rel="stylesheet" href="style.css" />
     <title>Efe's Portfolio</title>
   </head>
   <body>
     <!-- Sayfa üst kısım header ve nav -->
-    <header id="anasayfa">
+    <header class="main-header">
       <div id="logo">
         <p>ED</p>
       </div>
       <nav id="nav" class="active">
         <ul>
-          <li><a href="#hakkimda">About</a></li>
-          <li><a href="#projeler">Projects</a></li>
-          <li><a href="#iletisim">Contact</a></li>
-          <li><a href="#anasayfa">Scroll-up</a></li>
+          <li><a href="#info">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#logo">Scroll-up</a></li>
         </ul>
         <button class="icon" id="toggle">
           <div class="line line1"></div>
@@ -45,7 +32,7 @@
 
     <!-- foto ve karsilama kismi -->
 
-    <section id="hero-section">
+    <section class="hero-section">
       <div class="hero">
         <img id="vesikalik" src="efe_foto_kirp.jpg" alt="Efe Dallı" />
       </div>
@@ -60,10 +47,9 @@
     <!-- Ana kısım / bilgiler -->
 
     <main>
-      <div id="hakkimda" class="container">
-        <!-- sol kisim -->
-        <div class="split left">
-          <h2>About Me</h2>
+      <div class="about">
+        <h2 class="about-h2" id="info">About Me</h2>
+        <div class="info">
           <h3 class="h3">Short Information</h3>
           <p>
             I'm graduated from Hacettepe University with
@@ -76,7 +62,9 @@
             mastering in basics of front-end then learn Bootstrap, React,
             Angular, NodeJS and <strong>become a competent developer.</strong>
           </p>
+        </div>
 
+        <div class="work-ex">
           <h3 class="h3">Work Experience</h3>
           <ul>
             <li>
@@ -88,8 +76,10 @@
               >
             </li>
           </ul>
+        </div>
 
-          <h3 class="h3">Education</h3>
+        <div class="edu">
+          <h3>Education</h3>
           <ul>
             <li>
               <strong>2019-2022 </strong><br /><strong
@@ -98,7 +88,6 @@
               - Hacettepe University - Graduate School of Science and
               Engineering, Department of Botany, Ankara (Turkey)
             </li>
-            <br />
             <li>
               <strong>2014-2019 </strong><br /><strong
                 ><em>Bachelor of Science</em></strong
@@ -107,14 +96,12 @@
               (1 year mandatory English preparation course. Bachelor duration in
               Turkey is 4-year), Ankara (Turkey)
             </li>
-            <br />
             <li>
               <strong>2011-2014 </strong><br /><strong
                 ><em>High School</em></strong
               >
               - Ayrancı Aysel Yücetürk, Ankara(Turkey)
             </li>
-            <br />
             <li>
               <strong>2010-2011 </strong><br /><strong
                 ><em> High School</em></strong
@@ -123,142 +110,39 @@
             </li>
             <br />
           </ul>
-          <h3 class="h3">My Hobbies</h3>
-          <ul>
-            <li>Creating a personal library 📘</li>
-            <li>Classical music enthusiast 🎼</li>
-            <li>Pet care 🐈</li>
-            <li>
-              <a href="https://medium.com/botanikturkiye" target="_blank"
-                >Blogging &#9998;</a
-              >
-            </li>
-            <li>Fitness 🏋</li>
-          </ul>
         </div>
-        <!-- sag kisim -->
 
-        <!-- List itemlari p içerisine alip kapsayıcıyının 75% 'ni kaplatmayı dene' -->
-
-        <div class="split right" id="projeler">
-          <h2>Projects</h2>
-          <h3 class="h3">Projects & Publishing</h3>
-          <p>
-            <ul>
-            <li>
-              <a href="https://efe0635.github.io/Lab-website/index.html" target="_blank">basic website design for a research group (only with HTML & CSS)</a>
-            </li>
-            <li>
-              <strong>2022</strong><br />Efe Dallı, 2022, Investigations of
-              Multiple Functional Roles of Anthocyanin in Boron Tolerance
-              Acquisition by Salt Pre-Treatment of Arabidopsis thaliana, Ankara
-              <em>(Master Thesis)</em>
-            </li>
-            <br />
-            <li>
-              <strong>2021</strong><br />Omar Khalid Nashat 1, Efe Dallı 1, Seda
-              Yirmibeş 1, Şeküre Çulha Erdal 1, Nuran Çiçek 1 & Yasemin Ekmekçi
-              1,Revealing of Flooding Tolerance Levels of Soybean Genotypes at
-              The Early Seedling Stage Using Morpho-Physiological Characters,
-              III. Balkan Agricultural Congress, Edirne (Oral Presentation)
-            </li>
-            <br />
-            <li>
-              <strong>2021</strong><br />Şeküre Çulha Erdal 1, Seda Yirmibeş 1,
-              Efe Dallı 1, Omar Khalid Nashat 1, Nuran Çiçek 1 & Yasemin Ekmekçi
-              1, 2021, A Rapid Screening the Drought Tolerance Levels of Soybean
-              Cultivaris (Glycine max L.), II. International Agricu
-            </li>
-            <br />
-            <li>
-              <strong>2020-2021</strong><br />Researcher Student at TUBITAK 1001
-              Project Named "Revealing The Possible Efects Of The Climate Change
-              On Central Anatolian Steppe Plants Using Physio-ecological
-              Approaches"
-            </li>
-            <br />
-            <li>
-              <strong>2020-2021</strong><br />Researcher Student at Hacettepe
-              University Scientêc Research Project Named "Revealing
-              Photochemical and Antioxidative Responses of Soybean Genotypes in
-              Tolerance to Diéerent Water Regimes"
-            </li>
-            <br />
-          </ul>
-        </p>
-        </div>
-      </div>
-
-      <!-- İletisim ve Form alanlari -->
-
-      <div id="iletisim">
-        <div class="contact-list">
-          <h2>Contact Information</h2>
+        <div class="seminars">
+          <h3>Seminars and Courses</h3>
           <ul>
             <li>
-              <strong>Address: </strong>Keklik Pınarı Mahallesi, Ankara/Çankaya
+              <strong>2022 </strong><br />Front End Development with Angular and
+              React (BilgeAdam-still continue)
             </li>
-            <li>
-              <a href="tel:555555555"
-                ><strong>Phone: </strong>+90 506 287 37 04</a
-              >
-            </li>
-            <li>
-              <a href="mailto:efedalli@outlook.com"
-                ><strong>Email: </strong>efedalli96@gmail.com</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="form-contianer">
-          <form
-            action="mailto:efedalli@outlook.com"
-            enctype="text/plain"
-            method="post"
-            id="form"
-          >
-            <label class="lables" for="fname">First name:</label><br />
-            <input
-              type="text"
-              placeholder="e.g: John"
-              id="fname"
-              required
-            /><br />
-            <label class="lables" for="lname">Last name:</label><br />
-            <input
-              type="text"
-              placeholder="e.g: Williams"
-              id="lname"
-              required
-            />
             <br />
-            <label class="lables" for="tarea">What's on your mind?</label><br />
-            <textarea
-              name="wmind"
-              cols="30"
-              rows="10"
-              id="tarea"
-              placeholder="Please write here..."
-            ></textarea>
-            <div class="btn">
-              <button id="btn" type="submit">Submit !</button>
-            </div>
-          </form>
+            <li>
+              <strong>2022 </strong><br />Sıfırdan İleri Düzey Web Geliştirme
+              (HTML, CSS, Javascript) (Udemy)
+            </li>
+            <br />
+          </ul>
         </div>
       </div>
     </main>
 
     <footer>
-      <div class="footer">
-        <div class="icons-wrapper">
-          <a href="https://www.linkedin.com/in/efe-dalli-917767139/" target="_blind"><i class="ri-linkedin-box-line icn"></i></a>
-          <a href="https://www.instagram.com/fefedalli/"><i class="ri-instagram-line icn"></i></a>
-          <a href=""><i class="ri-twitter-line icn"></i></a>
-        </div>
+      <div class="social">
+        <a
+          href="https://www.linkedin.com/in/efe-dalli-917767139/"
+          target="_blind"
+          ><i class="ri-linkedin-box-line icn"></i></a>
+          <a href="https://github.com/efe3506" target="_blind"><i class="ri-github-line icn"></i></a>
+        <a href="https://www.instagram.com/fefedalli/" target="_blind"
+          ><i class="ri-instagram-line icn"></i
+        ></a>
+        <a href=""><i class="ri-twitter-line icn"></i></a>
       </div>
-      <p id="son">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita animi obcaecati ea eveniet. Perferendis, impedit? (2022).</p>
-      <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugiat fugit saepe blanditiis, nulla sequi! Voluptatem quos assumenda libero ducimus.(2022)</p>
     </footer>
 
     <script src="script.js"></script>

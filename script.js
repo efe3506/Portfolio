@@ -5,16 +5,22 @@ const nav = document.getElementById('nav')
 
 toggle.addEventListener('click', () => nav.classList.toggle('active'))
 
-// Main ikiye bölünme efekti JS
+// navbar scroll
 
-const left = document.querySelector('.left')
-const right = document.querySelector('.right')
-const container = document.querySelector('.container')
+window.addEventListener('scroll', checkBoxes)
 
+checkBoxes()
 
-left.addEventListener('mouseenter', () => container.classList.add('hover-left'))
-left.addEventListener('mouseleave', () => container.classList.remove('hover-left'))
+function checkBoxes() {
+    const triggerBottom = window.innerHeight / 1 * 0.5
 
-right.addEventListener('mouseenter', () => container.classList.add('hover-right'))
-right.addEventListener('mouseleave', ()=> container.classList.remove('hover-right'))
+    nav.forEach( nav => {
+        const navTop = nav.getBoundClientRect().navTop
 
+        if(navTop < triggerBottom){
+            nav.classList.remove('active')
+        } else{
+            nav.classList.add('active')
+        }
+    })
+}
