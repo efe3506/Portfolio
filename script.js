@@ -1,26 +1,30 @@
-// navbar JS
+'use strict'
 
-const toggle = document.getElementById('toggle')
-const nav = document.getElementById('nav')
+//Header sticky navbar
 
-toggle.addEventListener('click', () => nav.classList.toggle('active'))
+window.addEventListener("scroll", () => {
+    const header = document.querySelector('header');
+    header.classList.toggle("sticky", window.scrollY > 0);
+});
 
-// navbar scroll
+//section-1 JS
+//icons
 
-window.addEventListener('scroll', checkBoxes)
+//değişkenler
+const icons = document.querySelectorAll('.section-1 i');
+let i = 1;
 
-checkBoxes()
+//Tekrarlanan animasyon
+setInterval(() => {
+    i++;
+    const icon = document.querySelector('.section-1-icons .change');
+    icon.classList.remove('change');
 
-function checkBoxes() {
-    const triggerBottom = window.innerHeight / 1 * 0.5
-
-    nav.forEach( nav => {
-        const navTop = nav.getBoundClientRect().navTop
-
-        if(navTop < triggerBottom){
-            nav.classList.remove('active')
-        } else{
-            nav.classList.add('active')
-        }
-    })
-}
+    //nextElementSibling son elemana geldikten sonra hata verir. Bunu engellemek için globalde bir i değişkeni tanımlayıp her tekrarda i'yi büyütüp koşul olarak icons.length'i geçmemesini sağladım
+    if(i > icons.length){
+        icons[0].classList.add('change');
+        i = 1;
+    } else{
+        icon.nextElementSibling.classList.add('change');
+    }
+}, 2500)
