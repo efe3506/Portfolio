@@ -165,6 +165,7 @@ header.sticky a{
 .gallery{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .gallery-link{
@@ -189,7 +190,7 @@ header.sticky a{
 }
 
 .project-img{
-    width: 30vw;
+    width: 25vw;
     height: 25vw;
     object-fit: cover;
     box-shadow: .2rem .2rem .1rem #000;
