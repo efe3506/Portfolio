@@ -16,7 +16,7 @@
 }
 
 html{
-    font-size: 10px;
+    font-size: 62.5%;
 }
 
 body{
@@ -40,8 +40,9 @@ header{
 
 /* JS fade effect */
 header.sticky{
-    padding: 1.7rem 0;
+    padding: 1.5rem 0;
     background-color: #777;
+    border-bottom: 2px solid #a79a2d;
 }
 
 header.sticky a{
@@ -75,8 +76,8 @@ header.sticky a{
 .nav-list a:hover{
     color: #a79a2d;
 }
-
-@media screen and (max-width:800px) {
+/* 
+@media(max-width:800px) {
     header{
         padding: 3.5rem 0;
     }
@@ -94,7 +95,7 @@ header.sticky a{
     }
 }
 
-@media screen and (max-width:500px){
+@media(max-width:500px){
     header{
         padding: 2.5rem 0;
     }
@@ -110,7 +111,7 @@ header.sticky a{
     header.sticky a{
         font-size: 1.2rem;
     }
-}
+} */
 /* navbar end */
 /* header css end*/
 
@@ -126,8 +127,13 @@ header.sticky a{
     justify-content: space-evenly;
 }
 
-.section-heading{
+.main-heading{
     font-size: 10rem;
+    margin-bottom: -20rem;
+}
+
+.section-heading, .main-heading{
+    font-size: 8rem;
     font-weight: 900;
     color: #eee;
     text-align: center;
@@ -170,7 +176,7 @@ header.sticky a{
 
 .gallery-link{
     position: relative;
-    margin: 4rem 1rem;
+    margin: 10rem 1rem;
 }
 
 .gallery-link::after{
@@ -219,7 +225,7 @@ header.sticky a{
 
 .gallery-link:hover .project-name{
     width: 100%;
-    transition: width 1s .5s;
+    transition: width 1.5s .5s;
 }
 
 .project-description{
@@ -243,6 +249,181 @@ header.sticky a{
 }
 
 /* section-2 end */
+
+/* section-3 */
+
+.section-3{
+    width: 100%;
+    height: 80vh;
+    margin-top: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-3 .section-heading{
+    margin-bottom: 5rem;
+}
+
+.heading-3{
+    color: #eee;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-shadow: .2rem .2rem .2rem #000;
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 2rem 0;
+}
+
+.left, .right{
+    background-color: #777;
+    border-radius: 5px;
+    box-shadow: .2rem .2rem .2rem #a79a2d,
+    .3rem .3rem .3rem #000;
+    /* height: 70vh; */
+}
+
+.about-content{
+    padding: 2rem;
+}
+
+.about-content p{
+    width: 70% !important;
+    margin: 0 auto !important;
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+
+.profile-img{
+    width: 25%;
+    height: 25%;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: .1rem .1rem .1rem #000;
+}
+
+.about-footer{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lab-console{
+    position: relative;
+}
+
+.lab-console i{
+    font-size: 5rem;
+    color: #eee;
+}
+
+.arrow-container{
+    display: flex;
+    justify-content: space-around !important;
+}
+
+.arrow-p{
+    font-size: 5rem;
+    font-weight: 900 !important;
+    color: #a79a2d;
+    text-shadow: .1rem .1rem .1rem #000;
+    transform: rotateX(-10rem) scale(0);
+    transition: all .5s;
+    margin: 0 1rem;
+}
+
+.change-arr{
+    transform: rotateX(0) scale(1.5);
+    transition: all .5s .3s;
+    text-shadow: .3rem .3rem .2rem #000;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container p{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.container p a:hover{
+    color: #a79a2d;
+    text-decoration: underline;
+    transition: .3s;
+}
+
+.container form{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.container form div{
+    display: flex;
+    align-items: center;
+}
+
+.container form div label,
+ .container form div input,
+ .container form div textarea{
+    width: 50%;
+    margin-top: 4rem;
+    outline: none;
+}
+
+.container form div textarea,
+.container form div input{
+    border: 2px solid #a79a2d;
+    border-radius: 5px;
+    padding: .5rem;
+    background-color: #999;
+    box-shadow: .1rem .1rem .1rem #000;
+}
+
+.container form textarea{
+    height: 15rem;
+}
+
+.btn{
+    background-color: transparent !important;
+    border: 2px solid #a79a2d !important;
+    color: #eee !important;
+    font-size: 2rem !important;
+    font-weight: 600 !important;
+    padding: .5rem 2rem !important;
+    transition: all .5s;
+}
+
+.btn:hover{
+    background-color: #a79a2d !important;
+    border-radius: 10px;
+    transition: border-radius .5s;
+}
+
+.container label{
+    text-align: center;
+}
+
+.container > *{
+    color: #eee;
+}
+
+.container a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* section-3 end */
 
 /* section-4 / footer */
 
